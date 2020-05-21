@@ -1,0 +1,77 @@
+body {
+    font-family: Roboto;
+    font-weight: normal;
+    text-align: center;
+    display: flex; 
+    flex-direction: column; /* can only be used if display:flex */
+    align-items: center;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 20px 0px 0px 0px;
+    color: #2d3142;
+}
+
+button {
+    font-size: 15px;
+}
+
+button:hover {
+    color: white;
+    background: #345d81;
+}
+
+#game {
+    margin: 25px;
+}
+
+/* game board table */
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  /* ✓TODO: make into circles */
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  /* border-radius turns the piece into circles at 50% */
+  border-radius: 50%;
+}
+
+/* ✓TODO: make pieces red/blue,  depending on player 1/2 piece */
+.piece.p1 {
+    background-color: #ef8354;
+}
+
+.piece.p2 {
+    background-color: #4f5d75;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  /* background-color: #bfc0c0; */
+  /* background-color: red; */
+}
+
+.hover-p1 :hover {
+    background-color: #ef8354;
+    border-radius: 50%;
+}
+
+.hover-p2 :hover {
+    background-color: #4f5d75;
+    border-radius: 50%;
+}
+
